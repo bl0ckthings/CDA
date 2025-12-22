@@ -1,0 +1,24 @@
+$cd-btn: #011c37;
+$cd-txt: #15DEA5;
+$cd-btn-start: rgba(1, 28, 55, 0);
+$cd-btn-end: rgba(1, 28, 55, 1);
+
+.btn {
+    background-color: $cd-btn-start;
+    border: 4px solid $cd-btn;
+    border-radius: 10rem;
+    cursor: pointer;
+    font-size: 2rem;
+    overflow: hidden;
+    padding: 1.5rem 1.5rem;
+    position: relative;
+    max-width: 50%;
+    color: lightgreen;
+    transition: transform 2000ms cubic-bezier(0,.8,.48,.81);
+    margin: 0 auto;
+    &:hover {
+        transform: scale(1.5);
+       
+        
+    }
+}
