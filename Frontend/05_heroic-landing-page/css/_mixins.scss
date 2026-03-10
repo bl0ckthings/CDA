@@ -1,0 +1,46 @@
+// mixins here
+$first-color : #058fce;
+$first-color-light : #058fced9;
+$test-color :red;
+// COLORS
+$color1: #058fce;
+$color2:rgb(209, 0, 0);
+$color3:rgba(48, 151, 0,1);
+
+$altColor:gold;
+$linkBgColor: rgba(5,143,206,.85);
+$textColor:#333;
+$bgColor:black;
+$bgColorLight:#666;
+$bgColorUltraLight:rgb(246, 246, 246);
+$defonceColor:white;
+$transparentColor:transparent;
+
+// POSITIONNEMENT FLEX
+@mixin XYcenteredBlock{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin XYcenteredFullHeightBlock{
+    @include XYcenteredBlock;
+    min-height: 100vh;
+}
+
+// Gestion overlay
+@mixin overlayParent{
+    content: "";
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    z-index:0;
+}
+@mixin overlayChild{
+    position:relative;
+    z-index:10;
+}
+@mixin overlayReset{
+    position:static;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative vs absolute</title>
+    <style>
+        div {
+            margin-inline: auto;
+            width: 900px;
+        }
+span {
+    color:red;
+    right: 100px;
+    bottom: 100px;
+
+}
+.bloc1 span {
+    position: absolute;
+}
+.bloc2 span {
+    position: relative;
+}
+    </style>
+</head>
+<body>
+    <div class="bloc1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis facilis suscipit eos maiores dicta amet optio rerum dolor sunt magni rem vel minus, porro tempora veritatis ab ut alias assumenda?<span>1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, soluta laboriosam assumenda rem magni ullam distinctio quasi fuga a incidunt. Aliquam nihil quas, placeat id iste enim dicta esse deleniti?</span> Modi, magnam. Dolor perferendis recusandae praesentium maxime, impedit mollitia accusamus sunt vitae voluptate magni non laudantium eligendi. Inventore eligendi earum dolores quam?</p>
+    </div>
+    <div class="bloc2">
+        <p>Odio, voluptate consectetur! Beatae possimus facere earum autem vel? Ab eum fugiat quia commodi, laborum quibusdam soluta eius animi vel praesentium qui. Recusandae totam tempora necessitatibus sunt vel sequi debitis.<span> 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repudiandae fuga modi, veniam nesciunt commodi enim a sed, ipsa quis adipisci laudantium cum optio aut at. Ad obcaecati pariatur iusto.</span>Voluptas minima aperiam doloremque. Ex sapiente eum aliquam deleniti iusto dignissimos similique, ipsa architecto accusantium nobis, error dolore laborum fuga sed odio assumenda voluptas. Libero sunt voluptate quidem soluta ea.</p>
+    </div>
+</body>
+</html>

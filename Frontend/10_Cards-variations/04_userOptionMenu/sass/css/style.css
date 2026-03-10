@@ -1,0 +1,198 @@
+body {
+  box-sizing: border-box;
+  font-family: "Poppins";
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.Header-logoBox {
+  text-align: center;
+}
+.Header-logoBox-logo {
+  width: 150px;
+}
+.Header-logoBox-title {
+  font-weight: normal;
+  color: #5A9FF6;
+}
+@media screen and (min-width: 500px) {
+  .Header-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #5A9FF6;
+    height: 50px;
+    position: relative;
+  }
+}
+.Header-nav-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 500px) {
+  .Header-nav-left {
+    flex-direction: row;
+  }
+}
+.Header-nav-left-link {
+  color: white;
+  background-color: #5A9FF6;
+  width: 100%;
+  text-align: center;
+  padding-block: 10px;
+  cursor: pointer;
+}
+@media screen and (min-width: 500px) {
+  .Header-nav-left-link {
+    padding: 13px;
+  }
+}
+.Header-nav-left-link:hover {
+  background-color: rgba(90, 160, 246, 0.6352941176);
+}
+.Header-nav-right {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 500px) {
+  .Header-nav-right {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+  }
+}
+.Header-nav-right-userBox {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  padding: 1em;
+  cursor: pointer;
+}
+@media screen and (min-width: 500px) {
+  .Header-nav-right-userBox {
+    position: absolute;
+    padding: 0;
+    align-self: flex-end;
+  }
+}
+.Header-nav-right-userBox-img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 15px 2px #000000;
+}
+.Header-nav-right-menu {
+  display: none;
+}
+@media screen and (min-width: 500px) {
+  .Header-nav .active {
+    background-color: transparent;
+    top: unset;
+  }
+  .Header-nav .active .Header-nav-right-userBox {
+    padding: 0;
+    top: -10px;
+  }
+}
+.Header-nav .active .Header-nav-right-menu {
+  background-color: rgba(255, 255, 255, 0.716);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 80px 2em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  animation: slidein 500ms backwards;
+}
+@media screen and (min-width: 500px) {
+  .Header-nav .active .Header-nav-right-menu {
+    top: 100px;
+    right: 20px;
+    bottom: unset;
+    left: unset;
+    background-color: #8BF09F;
+    padding: 2em;
+    border-radius: 1em 0 1em 1em;
+    width: 200px;
+  }
+  .Header-nav .active .Header-nav-right-menu::after {
+    content: " ";
+    background-color: #8BF09F;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    top: 0;
+    right: 20px;
+    transform: translateY(-50%) rotate(45deg);
+  }
+}
+.Header-nav .active .Header-nav-right-menu-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  transition: transform 200ms;
+}
+.Header-nav .active .Header-nav-right-menu-list:nth-child(1) {
+  animation: slidein 500ms 0.1s backwards;
+}
+.Header-nav .active .Header-nav-right-menu-list:nth-child(2) {
+  animation: slidein 500ms 0.2s backwards;
+}
+.Header-nav .active .Header-nav-right-menu-list:nth-child(3) {
+  animation: slidein 500ms 0.3s backwards;
+}
+.Header-nav .active .Header-nav-right-menu-list:nth-child(4) {
+  animation: slidein 500ms 0.4s backwards;
+}
+.Header-nav .active .Header-nav-right-menu-list:nth-child(5) {
+  animation: slidein 500ms 0.5s backwards;
+}
+.Header-nav .active .Header-nav-right-menu-list:hover .Header-nav-right-menu-list-text {
+  color: #5A9FF6;
+}
+.Header-nav .active .Header-nav-right-menu-list:hover .Header-nav-right-menu-list-icon {
+  transform: scale(1.3);
+}
+.Header-nav .active .Header-nav-right-menu-list-icon {
+  height: 25px;
+  transition: transform 200ms;
+}
+.Header-nav .active .Header-nav-right-menu-list-text {
+  font-size: 20px;
+  margin: 0;
+}
+@media screen and (min-width: 500px) {
+  .Header-nav .active .Header-nav-right-menu-list-text {
+    color: white;
+  }
+}
+
+.Main {
+  padding: 2em;
+}/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,6 @@
 package model;
 
-public class Vehicle {
+ public abstract class Vehicle {
 
 
         private Integer id;
@@ -8,15 +8,6 @@ public class Vehicle {
         private String model;
         private int year;
         private Boolean hasEngine;
-
-    public Vehicle(String brand, String model, Integer year, Boolean hasEngine) {
-
-        this.brand = brand;
-        this.model = model;
-        this.year = year;
-        this.hasEngine = hasEngine;
-    }
-
 
 
     public String getBrand() {

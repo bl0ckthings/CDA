@@ -1,0 +1,7 @@
+- Produire le HTML en utilisant la méthode BEM
+- Utiliser Sass pour le CSS
+- respecter l'imbricaton de balises imposée dans le schémas de DOM
+- prévoir un item de liste avec le prix (même si invisible sur le mockup)
+- s'arranger avec flex pour gérer le responsive sans media querries
+- dimension des boites: 300px * 300px précisément
+- Ne pas gérer le texte "promotion" au niveau du HTML, on fera ça dans le cours en pur CSS

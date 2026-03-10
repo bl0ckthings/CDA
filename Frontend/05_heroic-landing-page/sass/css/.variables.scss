@@ -1,0 +1,25 @@
+$color1: #058fce;
+$color2:rgb(209, 0, 0);
+$color3:rgba(48, 151, 0,1);
+$linkBgColor: rgba(5,143,206,.85);
+$first-color-light : #058fced9;
+
+@keyframes slidein {
+    from {
+        transform: translateX(100%)
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+@mixin unbuttonize {
+
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  font: inherit;
+  border-radius: 0;
+  appearance: none; // Just in case we missed anything.
+}

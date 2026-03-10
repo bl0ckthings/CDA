@@ -1,0 +1,80 @@
+body {
+  background: linear-gradient(45deg, rgb(0, 164, 240), rgb(3, 231, 144));
+  font-family: "Poppins";
+}
+
+h1 {
+  text-align: center;
+  font-size: 4em;
+  color: white;
+  text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.Wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Wrapper:hover .Wrapper-card {
+  filter: grayscale(100%) blur(1px);
+}
+.Wrapper:hover .Wrapper-card:hover {
+  transform: scale(1.1);
+  filter: blur(0) grayscale(0);
+}
+.Wrapper-card {
+  background-color: white;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.4);
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  padding-left: 25px;
+  padding-top: 57px;
+  border-radius: 25px;
+  position: relative;
+  transition: transform 0.1s ease-out, filter 0.6s ease-in;
+}
+.Wrapper-card.portrait {
+  padding-left: 57px;
+  padding-top: 25px;
+}
+.Wrapper-card.portrait .Wrapper-card-desc {
+  margin-right: 57px;
+}
+.Wrapper-card.portrait .Wrapper-card-name {
+  margin-top: -6px;
+}
+.Wrapper-card.portrait.promo::before {
+  bottom: 0px;
+  left: 0px;
+  transform: rotate(-90deg) translate(25px, 240%);
+}
+.Wrapper-card.promo {
+  background-color: rgb(255, 208, 0);
+}
+.Wrapper-card.promo::before {
+  content: "Promotion";
+  transform-origin: bottom left;
+  position: absolute;
+  letter-spacing: 0.3em;
+  bottom: 0px;
+  left: 3px;
+  transform: rotate(-90deg) translate(57px, 100%);
+}
+.Wrapper-card-desc {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-right: 25px;
+  font-weight: 900;
+  color: rgb(0, 92, 134);
+}
+.Wrapper-card-price {
+  display: none;
+}/*# sourceMappingURL=style-BEM-sass.css.map */

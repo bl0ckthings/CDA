@@ -1,0 +1,87 @@
+body{
+    background: linear-gradient(45deg,rgb(0, 164, 240),rgb(3, 231, 144));
+    font-family: 'Poppins';
+}
+h1{
+    text-align:center;
+    font-size:4em;
+    color:white;
+    text-shadow:10px 10px 20px rgba(0,0,0,.5)
+}
+.Wrapper{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    width:80%;
+    max-width:1100px;
+    margin-left: auto;
+    margin-right: auto;
+    // background-color: red;;
+    &:hover .Wrapper-card{
+        filter:grayscale(100%) blur(1px) ;
+        &:hover{
+            transform:scale(1.1);
+            filter:blur(0) grayscale(0);
+        }
+    }
+
+    &-card{
+        background-color: white;
+        box-shadow: 7px 7px 15px rgba(0,0,0,.4);
+        margin:20px;
+        width:300px;
+        height:300px;
+        box-sizing:border-box;
+        padding-left:25px;
+        padding-top:57px;
+        border-radius: 25px;
+        position:relative;
+        transition:transform .1s ease-out, filter .6s ease-in;
+
+        
+        &.portrait{
+            padding-left:57px;
+            padding-top:25px;
+            .Wrapper-card-desc{
+                margin-right:57px;
+                
+            }
+            .Wrapper-card-name{
+                margin-top:-6px;
+            }
+            &.promo::before{
+                // background-color: red;
+                bottom:0px;
+                left:0px;
+                transform: rotate(-90deg) translate(25px, 240%);
+
+
+            }
+        }
+        &.promo{
+            background-color: rgb(255, 208, 0);
+            &::before{
+                content:'Promotion';
+                transform-origin: bottom left;
+                position:absolute;
+                letter-spacing: .3em;;
+                bottom:0px;
+                left:3px;
+                transform: rotate(-90deg) translate(57px, 100%);
+            }
+        }
+        &-desc{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            text-align:center;
+            margin-right:25px;
+            font-weight: 900;
+            color:rgb(0, 92, 134);            
+        }
+        &-price{
+            display:none;
+        }          
+    }
+    
+}

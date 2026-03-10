@@ -1,0 +1,68 @@
+body {
+    box-sizing: border-box;
+    header {
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        .carte {
+            height: 180px;
+            width: 180px;
+            transition : 0.4s;
+            position: relative;
+            overflow: hidden;
+            &:hover {
+              ul {
+                bottom: 10px;
+              }
+            }
+            img {
+            height: 180px;
+            width: 180px;
+            object-fit: cover;
+            overflow: hidden;
+            }
+
+            ul {
+                list-style-type: none;
+                position: ab;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                height: 80px;
+                bottom: -60px;
+                width: 100%;
+                transition: 200ms;
+               
+                .titre {
+                    bottom: 5px;
+                    background-color: black;
+                    color: white;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 1.4;
+                    font-weight: bold;
+                    height: 20px;
+
+                }
+
+                .prix {
+              
+                   width: 100%;
+                   background-color: rgba(0, 0, 0, 0.687);
+                   color: white;
+                   font-size: 60px;
+                   bottom: -60px;
+                   text-align: center;
+                }
+            }
+            
+        }
+
+    }
+
+}
